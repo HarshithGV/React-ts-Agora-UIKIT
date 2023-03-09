@@ -1,9 +1,10 @@
 
 import AgoraUIKit from "agora-react-uikit";
 import React, {useState} from "react";
+import './index.css';
 
 function App () {
-const [videoCall, setVideoCall] = useState(true);
+const [videoCall, setVideoCall] = useState(false);
 
 const rtcProps = {
     appId: "c924bd6fb57b44b1809c0746b78875d8",
@@ -18,7 +19,8 @@ return videoCall ? (
     <AgoraUIKit rtcProps={rtcProps} callbacks={callbacks} />
   </div>
 ) : (
-  <h3 onClick={() => setVideoCall(true)}>Join</h3>
+<div style={{ width: "850%", marginTop:"15rem", textAlign:"center"}}>
+  <button onClick={() => setVideoCall(true)}>Join Navatar Call</button></div>
 );
 }
 
