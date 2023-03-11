@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import './index.css';
 
 function App () {
-const [videoCall, setVideoCall] = useState(true);
+const [videoCall, setVideoCall] = useState(false);
 
 const rtcProps = {
     appId: "c924bd6fb57b44b1809c0746b78875d8",
@@ -19,7 +19,7 @@ return videoCall ? (
     <AgoraUIKit rtcProps={rtcProps} callbacks={callbacks} />
   </div>
 ) : (
-<div style={{ width: "850%", marginTop:"15rem", textAlign:"center"}}>
+<div style={{ width: "100%", display: "flex", marginTop:"15rem", textAlign:"center"}}>
   <button onClick={() => setVideoCall(true)}>Join Navatar Call</button></div>
 );
 }
