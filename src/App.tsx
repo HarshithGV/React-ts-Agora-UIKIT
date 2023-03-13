@@ -9,7 +9,7 @@ const [videoCall, setVideoCall] = useState(false);
 const rtcProps = {
     appId: "c924bd6fb57b44b1809c0746b78875d8",
     channel: "Navatar",
-    token: "007eJxTYNBaef3B3SUfrDbItx9YbtHxKHe3kXgzS1SegcWd00x/1DcoMCRbGpkkpZilJZmaJ5mYJBlaGFgmG5ibmCWZW1iYm6ZYrBLnTmkIZGS44S7KysgAgSA+O4NfYlliSWIRAwMAzOQf0w==",
+    token: "007eJxTYLB98Hc+d3LCjBNrL4iG8jgG/TWdrCA4fWvmYt+iC0cz2NkUGJItjUySUszSkkzNk0xMkgwtDCyTDcxNzJLMLSzMTVMsfBj4UxoCGRly6joYGKEQxGdn8EssSyxJLGJgAAAsRB3n",
 };
 const callbacks = {
   EndCall: () => setVideoCall(false),
