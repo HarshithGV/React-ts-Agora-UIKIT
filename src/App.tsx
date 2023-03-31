@@ -4,12 +4,12 @@ import React, {useState} from "react";
 import './index.css';
 
 function App () {
-const [videoCall, setVideoCall] = useState(false);
+const [videoCall, setVideoCall] = useState(true);
 
 const rtcProps = {
     appId: "c924bd6fb57b44b1809c0746b78875d8",
     channel: "Navatar",
-    token: "007eJxTYJh1dVLLtKvzHbufXmg+X5vpYPBH7NC835ZJoVHTDEVfBk1RYEi2NDJJSjFLSzI1TzIxSTK0MLBMNjA3MUsyt7AwN02xuDtDNKUhkJFhQrICEyMDBIL47Ax+iWWJJYlFDAwAL+8hTw==",
+    token: "007eJxTYJg8+3xp4PztOZzrmUxXnl999t6Vgnnt57h9nBNnshzSc2JXYEi2NDJJSjFLSzI1TzIxSTK0MLBMNjA3MUsyt7AwN02xuN2mltIQyMgw/c4+JkYGCATx2Rn8EssSSxKLGBgAsmwgmg==",
 };
 const callbacks = {
   EndCall: () => setVideoCall(false),
