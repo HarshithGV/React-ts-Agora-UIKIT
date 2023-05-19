@@ -7,10 +7,12 @@ function App () {
 const [videoCall, setVideoCall] = useState(true);
 
 const rtcProps = {
+          
     appId: "c924bd6fb57b44b1809c0746b78875d8",
     channel: "Navatar",
-    token: "007eJxTYDjaFXN+XejlvXeqVpx3UeIVOcH1ZX8462blPxev6apItasqMCRbGpkkpZilJZmaJ5mYJBlaGFgmG5ibmCWZW1iYm6ZYrFJPT2kIZGSQc9nOyMgAgSA+O4NfYlliSWIRAwMAue8fug==",
-};
+    token: "007eJxTYIixclF0utk2afm+P+/yoxbuEFZ8+rlqTtZc4yudd17uyeJTYEi2NDJJSjFLSzI1TzIxSTK0MLBMNjA3MUsyt7AwN02x+BCWntIQyMhwMnApKyMDBIL47Ax+iWWJJYlFDAwANPkiWA==",
+
+  };
 const callbacks = {
   EndCall: () => setVideoCall(false),
 };
